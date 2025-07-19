@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Search</h1>
+
+    <!-- Search input and button -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Enter movie title..." />
+      <button id="searchButton">Search</button>
+    </div>
+
+    <!-- Loading indicator -->
+    <div id="loading" style="display: none;">Loading...</div>
+
+    <!-- Search results and details -->
+    <div id="results"></div>
+    
+
+    <!-- Pagination buttons -->
+    <div id="pagination" style="margin-top: 20px;"></div>
+
+  </div>
+
+  <div class="movies-container" id="movies-container"></div>
+
+
+ <!-- Movie list + detail layout -->
+<div id="results" class="movie-grid"></div>
+
+<div id="movie-details-panel" class="movie-details hidden">
+  <button class="close-btn" onclick="closeDetails()">✖</button>
+  
+  
+  <img id="detail-poster" src="" alt="Movie Poster">
+  <div class="detail-content">
+    
+    <h2 id="detail-title"></h2>
+    <p><strong>Year:</strong> <span id="detail-year"></span></p>
+    <p><strong>Genre:</strong> <span id="detail-genre"></span></p>
+    <p><strong>Plot:</strong> <span id="detail-plot"></span></p>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
